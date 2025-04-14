@@ -1,6 +1,6 @@
 # hogleLabProjTemplate
 
-A simple template for a project using R/python and [Quarto](https://quarto.org/) notebooks. 
+A simple template for a project using R/Python and [Quarto](https://quarto.org/) notebooks. 
 
 The project is rendered with Quarto and can then be served using GitHub Pages [following these instructions](https://quarto.org/docs/publishing/github-pages.html). 
 
@@ -8,6 +8,19 @@ You can view the HTML documents on the web and share them with collaborators. On
 you would be able to view the website at this URL <https://GHUSERNAME.github.io/REPOSITORYNAME/>
 
 [Click here to view rendered notebooks of the analysis.](https://slhogle.github.io/hogleLabProjTemplate/)
+
+## Structure:
+The `_data_raw` directory should never be touched or modified! It includes raw data files obtained from instruments.
+
+The `data` directory is where processed data projects should go. Usually, in an analysis workflow you will start with raw data, 
+clean/organize it, perhaps transform it in some way, then save that product in `data` for later branches of the workflow. 
+
+The `R/Py` directories store analysis code/scripts for the project. I prefer to keep a separate directory for each analysis language I am using in the project, but you 
+may, of course, combine all code, regardless of language, into a single directory structure if you prefer.
+
+Note: You can create whatever kind of sub-directory structure you prefer within `_data_raw`, `data`, `R`, and `Py`. You can also create other new directories. 
+Some steps of the process will create new directories for you (e.g., running `renv::init`, or `quarto render`). This is expected. Renv will create its own `.gitignore` to prevent 
+committing huge R environments.
 
 ## Manuscript:
 
