@@ -1,3 +1,24 @@
+# repo specific files
+wip/
+# _notrack is for data objects that shouldn't be git tracked
+_notrack/
+# Adobe illustrator files
+*.ai
+# R data files
+*.rds
+# Apache arrow parquet files
+*.parquet
+# Netcdf files
+*.nc
+
+# Quarto documents
+/.quarto/
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+# this is in case you are using code with private API key to access a 
+# remove database
+.httr-oauth
+
 # History files
 .Rhistory
 .Rapp.history
@@ -47,3 +68,26 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Python Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
