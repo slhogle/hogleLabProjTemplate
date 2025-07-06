@@ -60,6 +60,8 @@ renv::restore()
 To initiate `renv` for a new project:
 
 ``` r
+# if on linux set cran here to download binaries
+options(repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/jammy/latest"))
 install.packages("renv")
 # initialize
 renv::init()
